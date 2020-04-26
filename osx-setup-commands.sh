@@ -25,13 +25,20 @@ source ~/.zshrc
 brew cask install google-chrome
 brew cask install firefox
 
-# Utilities
-brew cask install spectacle
-brew cask install alfred
-# set CMD+space to launch alfred
-
-# NVM/Node
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
-nvm install stable
-
+# Install Visua Studio Code
 brew cask install visual-studio-code
+
+# Utilities
+brew install git
+brew cask install spectacle
+brew cask install alfred # Don't forget to set CMD+space to launch alfred
+brew install tmux
+brew install htop
+
+# add VIM keybiding  --> "bindkey -v"
+
+# NVM/Node  https://github.com/nvm-sh/nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+# nvm install stable   --> install latest stable version
+# nvm install 12.16.2   --> install specific version
+# nvm use 12.16.2 or nvm run 12.16.2 --> set the version of NodeJS running locally 
