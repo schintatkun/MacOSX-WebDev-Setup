@@ -1,4 +1,6 @@
-# Setup Mac OSX 
+# Setup Mac OSX
+# Credit to "Coding Garden with CJ" Youtube Channel where I learned a good stuffs from :)
+
 xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 brew update
@@ -8,17 +10,22 @@ brew cask install iterm2
 # Profile Tab -> General -> Working Directory -> “Reuse previous session’s directory”
 #             ->  Keys -> Load Preset -> Natural Text Editing
 #             ->  Text ->Font  ( download Anonymous Pro Font )
-brew install git
+
+# install ZSH
 brew install zsh
-chsh -s $(which zs)
+
 # change your default shell from Bash to ZSH
+chsh -s $(which zs)
 # restart terminal
 
-# install Oh my zsh
+# install Oh My ZSH
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # start new shell instance
+# run this command
 source ~/.zshrc 
+
+# Set theme as you prefer
 # vim ~/.zshrc, set ZSH_THEME=“agnoster”
 
 # Web Browsers
@@ -31,7 +38,7 @@ brew cask install visual-studio-code
 # Utilities
 brew install git
 brew cask install spectacle
-brew cask install alfred # Don't forget to set CMD+space to launch alfred
+brew cask install alfred # Don't forget to config CMD+space as a defualt alfred launcher instead of spotlight
 brew install tmux
 brew install htop
 
